@@ -8,6 +8,9 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "engines": {
+    "node": "24.x"
+  },
   "dependencies": {
     "@reduxjs/toolkit": "^2.10.1",
     "@stripe/react-stripe-js": "^5.4.1",
