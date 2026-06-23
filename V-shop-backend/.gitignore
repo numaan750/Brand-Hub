@@ -1,0 +1,36 @@
+# Node modules
+node_modules/
+
+# Environment files
+.env
+.env.*
+.env.local
+
+# Build folders
+build/
+dist/
+
+# Log files
+*.log
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+pnpm-debug.log
+
+# IDE / Editor folders
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Cache folders
+.cache/
+.next/
+
+# Optional: Images/Uploads (agar local store ho rahe hain)
+uploads/
+
+# MongoDB local data (agar use ho rahi ho)
+data/
