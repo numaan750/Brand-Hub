@@ -31,7 +31,7 @@ const Login = () => {
 
 
     try {
-      const response = await fetch('https://velora-website-backend.vercel.app/api/vadminmodels', {
+      const response = await fetch('https://brand-hub-backend.vercel.app/api/vadminmodels', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

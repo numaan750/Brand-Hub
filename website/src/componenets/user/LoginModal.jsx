@@ -8,7 +8,7 @@ import { setUserId } from "@/redux/cartslice";
 import { AuthContext } from "@/context/AuthContext";
 import toast from "react-hot-toast";
 
-const API_URL = "https://velora-website-backend.vercel.app/api/auth";
+const API_URL = "https://brand-hub-backend.vercel.app/api/auth";
 
 const LoginModal = ({ isOpen, onClose }) => {
   const [show, setShow] = useState(false);

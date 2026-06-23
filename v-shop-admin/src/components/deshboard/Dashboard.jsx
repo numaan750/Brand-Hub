@@ -19,7 +19,7 @@ const Dashboard = ({ setActiveView }) => {
 
   // Backend URL - adjust according to your setup
   const backendUrl =
-    process.env.NEXT_PUBLIC_BACKEND_URL || "https://velora-website-backend.vercel.app/api";
+    process.env.NEXT_PUBLIC_BACKEND_URL || "https://brand-hub-backend.vercel.app/api";
 
   // API fetch functions
   const getUsersCount = async () => {

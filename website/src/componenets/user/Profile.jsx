@@ -61,7 +61,7 @@ const Profile = () => {
   // ✅ Dynamic backend URL - works in both development and production
   const backendUrl =
     process.env.NEXT_PUBLIC_BACKEND_URL ||
-    "https://velora-website-backend.vercel.app/api";
+    "https://brand-hub-backend.vercel.app/api";
 
   // Fetch profile
   useEffect(() => {
@@ -81,7 +81,7 @@ const Profile = () => {
         if (!authToken) return;
 
         const res = await axios.get(
-          "https://velora-website-backend.vercel.app/api/auth/profile",
+          "https://brand-hub-backend.vercel.app/api/auth/profile",
           {
             headers: { Authorization: `Bearer ${authToken}` },
           }
@@ -194,7 +194,7 @@ const Profile = () => {
     setLoading(true);
     try {
       const res = await axios.put(
-        "https://velora-website-backend.vercel.app/api/auth/profile",
+        "https://brand-hub-backend.vercel.app/api/auth/profile",
         settingsData,
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -216,7 +216,7 @@ const Profile = () => {
     setLoading(true);
     try {
       await axios.put(
-        "https://velora-website-backend.vercel.app/api/auth/change-password",
+        "https://brand-hub-backend.vercel.app/api/auth/change-password",
         {
           oldPassword: passwordData.oldPassword,
           newPassword: passwordData.newPassword,
@@ -241,7 +241,7 @@ const Profile = () => {
     setLoading(true);
     try {
       await axios.put(
-        "https://velora-website-backend.vercel.app/api/auth/change-email",
+        "https://brand-hub-backend.vercel.app/api/auth/change-email",
         { newEmail: emailData.newEmail },
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -326,7 +326,7 @@ const Profile = () => {
   const handleDeleteAccount = async () => {
     try {
       await axios.delete(
-        "https://velora-website-backend.vercel.app/api/auth/delete-account",
+        "https://brand-hub-backend.vercel.app/api/auth/delete-account",
         { headers: { Authorization: `Bearer ${token}` } }
       );
 

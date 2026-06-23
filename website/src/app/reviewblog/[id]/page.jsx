@@ -21,14 +21,14 @@ const SingleBlogPage = () => {
 
         // ✅ Current blog fetch karo
         const blogRes = await fetch(
-          `https://velora-website-backend.vercel.app/api/blogmodel/${id}`
+          `https://brand-hub-backend.vercel.app/api/blogmodel/${id}`
         );
         if (!blogRes.ok) throw new Error("Blog not found");
         const blogData = await blogRes.json();
 
         // ✅ All blogs fetch karo (for prev/next navigation)
         const allBlogsRes = await fetch(
-          "https://velora-website-backend.vercel.app/api/blogmodel"
+          "https://brand-hub-backend.vercel.app/api/blogmodel"
         );
         const allBlogsData = await allBlogsRes.json();
 

@@ -15,7 +15,7 @@ const Blogecards = () => {
       try {
         setLoading(true);
         const res = await fetch(
-          "https://velora-website-backend.vercel.app/api/blogmodel"
+          "https://brand-hub-backend.vercel.app/api/blogmodel"
         );
 
         if (!res.ok) {

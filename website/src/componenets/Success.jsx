@@ -42,7 +42,7 @@ function SuccessContent() {
         console.log("📤 Sending order to backend...", orderData);
 
         const res = await axios.post(
-          "https://velora-website-backend.vercel.app/api/checkoutmodel",
+          "https://brand-hub-backend.vercel.app/api/checkoutmodel",
           orderData,
           {
             headers: { "Content-Type": "application/json" },

@@ -47,7 +47,7 @@ const AddToCart = ({ paymentStatus, sessionId }) => {
   });
 
   // Backend URL
-  const backendUrl = "https://velora-website-backend.vercel.app/api";
+  const backendUrl = "https://brand-hub-backend.vercel.app/api";
 
   // ✅ Extract URL parameters on mount
 
@@ -363,7 +363,7 @@ const AddToCart = ({ paymentStatus, sessionId }) => {
 
       // ✅ Create Stripe session
       const response = await axios.post(
-        "https://velora-website-backend.vercel.app/api/stripe",
+        "https://brand-hub-backend.vercel.app/api/stripe",
         {
           products: cartItems.map((item) => ({
             _id: item.id,

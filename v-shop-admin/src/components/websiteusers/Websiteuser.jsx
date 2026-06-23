@@ -18,7 +18,7 @@ const AdminDashboard = () => {
   const [userOrders, setUserOrders] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const API_URL = "https://velora-website-backend.vercel.app/api";
+  const API_URL = "https://brand-hub-backend.vercel.app/api";
 
   useEffect(() => {
     fetchDashboardData();

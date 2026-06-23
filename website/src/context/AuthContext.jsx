@@ -46,7 +46,7 @@ export const AuthProvider = ({ children }) => {
   const getshipping = async () => {
     try {
       const res = await axios.get(
-        "https://velora-website-backend.vercel.app/api/shipping"
+        "https://brand-hub-backend.vercel.app/api/shipping"
       );
       setShipping(res.data.shipping);
     } catch (err) {
@@ -57,7 +57,7 @@ export const AuthProvider = ({ children }) => {
   const createcheckout = async () => {
     try {
       const res = await axios.post(
-        "https://velora-website-backend.vercel.app/api/checkoutmodel"
+        "https://brand-hub-backend.vercel.app/api/checkoutmodel"
       );
       setCheckout(res.data.checkout);
     } catch (err) {
@@ -68,7 +68,7 @@ export const AuthProvider = ({ children }) => {
   const getstatus = async () => {
     try {
       const res = await axios.get(
-        "https://velora-website-backend.vercel.app/api/checkoutmodel"
+        "https://brand-hub-backend.vercel.app/api/checkoutmodel"
       );
       setStatus(res.data.checkout);
     } catch (err) {
@@ -79,7 +79,7 @@ export const AuthProvider = ({ children }) => {
   const getblog = async () => {
     try {
       const res = await axios.get(
-        "https://velora-website-backend.vercel.app/api/blogmodel"
+        "https://brand-hub-backend.vercel.app/api/blogmodel"
       );
       // ✅ Backend array directly return karta hai, not { blog: [...] }
       setBlog(res.data); // Change: res.data.blog ❌ -> res.data ✅
@@ -93,7 +93,7 @@ export const AuthProvider = ({ children }) => {
   const getblogbyid = async (id) => {
     try {
       const res = await axios.get(
-        `https://velora-website-backend.vercel.app/api/blogmodel/${id}`
+        `https://brand-hub-backend.vercel.app/api/blogmodel/${id}`
       );
       // ✅ Backend { blog: {...} } return karta hai
       setBlog(res.data.blog); // This is correct ✅
@@ -112,7 +112,7 @@ export const AuthProvider = ({ children }) => {
       console.log("Sending data to backend:", formData);
 
       const response = await fetch(
-        "https://velora-website-backend.vercel.app/api/contectmodel",
+        "https://brand-hub-backend.vercel.app/api/contectmodel",
         {
           method: "POST",
           headers: {

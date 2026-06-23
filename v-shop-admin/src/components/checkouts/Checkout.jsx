@@ -19,7 +19,7 @@ const Checkout = () => {
   const [newOrdersCount, setNewOrdersCount] = useState(0);
   const [newOrders, setNewOrders] = useState([]); // ✅ Separate state for new orders
 
-  const backendUrl = "https://velora-website-backend.vercel.app/api";
+  const backendUrl = "https://brand-hub-backend.vercel.app/api";
 
   // ✅ Fetch orders with pagination and status filter
   const fetchOrders = async (page = 1, status = "all") => {

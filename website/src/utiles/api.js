@@ -1,6 +1,6 @@
 // frontend/utils/api.js
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "https://velora-website-backend.vercel.app/api";
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "https://brand-hub-backend.vercel.app/api";
 
 export const getAllProducts = async () => {
   try {

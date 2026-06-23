@@ -25,7 +25,7 @@ const Shipping = () => {
     isActive: true,
   });
 
-  const backendUrl = "https://velora-website-backend.vercel.app/api";
+  const backendUrl = "https://brand-hub-backend.vercel.app/api";
 
   const fetchShippingMethods = async () => {
     setLoading(true);
